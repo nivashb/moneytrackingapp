@@ -1,0 +1,55 @@
+{% load static%}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title> {% block title %} money tracking {% endblock %}</title>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href={% static "bootstrap/bootstrap.min.css" %} rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href={% static "css/dashboard.css" %} rel="stylesheet">
+  </head>
+
+  <body>
+    
+
+    <div class="container-fluid">
+      <div class="row">
+
+       
+       
+
+        <main role="main" class="col-md-12">
+          
+          <div class="card">
+            <div class = "col-mid-3">
+            </div>
+            <div class = "col-mid-6">
+                {% block content%}
+
+                
+                {% endblock%}
+            </div>
+            <div class = "col-mid-3">
+            </div>
+          </div>
+
+       
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src={% static "js/main.js" %}> </script>
+    
+
+    
